@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from "react";
 import Table from 'react-bootstrap/Table'
+import {Link, Outlet} from "react-router-dom";
 
 
 const Getmng = () => {
@@ -36,6 +37,15 @@ const Getmng = () => {
                 }
             )
     }, [])
+    var EmpId=0;
+    var tId=0;
+    const handleClick = event => {
+        EmpId=event.currentTarget.id;
+        console.log(EmpId);
+        sessionStorage.setItem("Sr_No",EmpId);
+        sessionStorage.setItem("leave",JSON.stringify(items[EmpId]))
+
+      };
 
 
 
@@ -79,6 +89,8 @@ const Getmng = () => {
                                         <td>{item.mgr_empid}</td>
 
                                     </tr>
+                                    <td > <Link to="/ApproveLeave"><button id={tId++} onClick={handleClick}>Approve/Reject</button></Link>
+                        </td>
                                 </Table>
                             </div>
                         )

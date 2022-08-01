@@ -1,5 +1,3 @@
-
-
 import './App.css';
 import React, { useEffect, useState } from 'react'
 function App() {
@@ -68,5 +66,4 @@ function App() {
         </div>
   );
 }
-export default App2;
-
+export default App;

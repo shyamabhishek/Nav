@@ -43,7 +43,7 @@ const Home = (props)=>{
     } else {
         return (
             <div className="table-welcome">
-            <h1 >Welcome to Leave Management Application</h1>
+            <h2 > Employee Leave Management Application</h2>
             <table class="table table-striped table-dark">
             <thead>
                     <tr>

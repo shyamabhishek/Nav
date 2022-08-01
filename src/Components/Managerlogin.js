@@ -13,7 +13,7 @@ export default class Login extends Component {
             <form>
                 <div className="auth-wrapper">
                     <div className="auth-inner">
-                        <h3>Login</h3>
+                        <h3> Manager Login</h3>
                         <div className="mb-3">
                             <label>Manager ID</label>
                             <input

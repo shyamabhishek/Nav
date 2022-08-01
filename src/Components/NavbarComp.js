@@ -57,10 +57,11 @@ export default class NavbarComp extends Component {
                             
                                 </NavDropdown>
                                 
-                                <Nav.Link as={Link} to="/ApplyLeave">Apply Leave</Nav.Link>
-                               
-                                <Nav.Link as={Link} to="/Leave">Leave Applied</Nav.Link>
+                                <Nav.Link as={Link} to="/ApplyLeave"></Nav.Link>
+                                
+                                <Nav.Link as={Link} to="/Leave"> Leave Status</Nav.Link>
                                 <Nav.Link as={Link} to="/Manager">Manager</Nav.Link>
+                                <Nav.Link as={Link} to="/ApproveLeave"></Nav.Link>
                                 
 
 
@@ -84,7 +85,7 @@ export default class NavbarComp extends Component {
                         <Route path="/Leave" element={<Leave />} />
                         <Route path="/dashboard" element={<Dashboard />} />
                         <Route path="/Managerlogin" element={<Managerlogin />} />
-                        <Route path="/leave/ApproveLeave" element={<ApproveLeave />} />
+                        <Route path="/ApproveLeave" element={<ApproveLeave />} />
                         <Route path="/Manager" element={<Manager />} />
                         <Route path="/Manager/Managerlogin" element={<Managerlogin />} />
                         <Route path="/Getmng" element={<Getmng />} />

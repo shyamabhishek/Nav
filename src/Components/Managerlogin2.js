@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Login.css";
+//import "./Login.css";
 import {Link} from "react-router-dom";
 export default class Login extends Component {
     render() {
@@ -15,9 +15,9 @@ export default class Login extends Component {
                     <div className="auth-inner">
                         <h3>Login</h3>
                         <div className="mb-3">
-                            <label>Employee ID</label>
+                            <label>Manager ID</label>
                             <input
-                                defaultValue={jsonObj.emp_id}
+                                defaultValue={jsonObj.mgr_empid}
                                 type="name"
                                 className="form-control"
                                 placeholder="Enter Employee ID"
@@ -33,7 +33,7 @@ export default class Login extends Component {
                         </div>
                         <div className="d-grid gap-2 d-md-flex">
                         <Link to="/"><button className="btn btn-primary">Cancel</button></Link>
-                        <Link to="/ShowEmp"><button className="btn btn-primary">Login</button></Link>
+                        <Link to="/Getmng"><button className="btn btn-primary">Login</button></Link>
                             
                         </div>
                     </div>
